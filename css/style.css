@@ -30,6 +30,9 @@
 }
 
 /* Call The Font to Make it Working on all elements, Using Box Sizzing and prefixes */
+html{
+    scroll-behavior: smooth;
+}
 *{
     font-family: WorkSansBold;
     box-sizing: border-box;
@@ -225,6 +228,10 @@ header section .links ul li:not(:last-child) a {
     text-align: center;
     width: 320px;
     max-width: 100%;
+}
+.landing .intro-text span{
+    font-weight: bold;
+    color: #04c4b0;
 }
 /* Settings of h2 Heading in Intro Text Div on Landing Section   */
 .landing .intro-text h2{
@@ -571,3 +578,72 @@ header section .links ul li:not(:last-child) a {
     line-height: 1.7;
 }
 /*<--------- About End ------------>*/
+/*<--------- Contact Start ------------>*/
+.contact{
+    background-color: var(--secondary-color);
+    padding: 50px 0 ;
+}
+.contact .info {
+    padding: 20px;
+    text-align: center;
+}
+.contact .info .p-label{
+    font-weight: 800;
+    color: #2c4755;
+    font-size: 35px;
+}
+.contact .info .break-line{
+    width: 50%;
+    border-color: var(--main-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.contact .info .social p{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.contact .info .email-link{
+    font-size: 35px;
+    color: var(--main-color);
+    font-weight: 800;
+    text-decoration: none;
+    
+}
+.contact .info .social a{
+    padding: 0 10px;
+    font-size: 30px;
+    color: #2c4755;
+    transition-duration: .3s;
+}
+.contact .info .social a:hover{
+    color: #0be2cd;
+    
+}
+@media (max-width: 600px) {
+    .contact .info .p-label,
+    .contact .info .email-link{
+        font-size: 20px;
+    }
+    .contact .info .social p {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .contact .info .social a {
+        font-size: 20px;
+        padding: 0 6px;
+    }
+}
+/*<--------- Contact End ------------>*/
+/*<--------- Footer Start ------------>*/
+.footer-div{
+    background-color: #2c4755;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.footer-div span{
+    color: #0be2cd;
+    font-weight: bold;
+}
+/*<--------- Footer End ------------>*/
